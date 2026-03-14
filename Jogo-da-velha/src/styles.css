@@ -3,7 +3,6 @@
 }
 
 body {
-  font-family: sans-serif;
   margin: 20px;
   padding: 0;
 }
@@ -54,8 +53,7 @@ body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
-  background-color: lab(89.46% 17.48 -6.68);
-  
+  background-color: lab(89.46% 17.48 -6.68); 
 }
 
 .square {
@@ -81,12 +79,42 @@ body {
 
 .status {
   margin-bottom: 10px;
+  color: rgb(250, 54, 119);
 }
 .game {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .game-info {
   margin-left: 20px;
+}
+
+button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(250, 54, 119);
+}
+
+li::marker {
+  color: rgb(250, 54, 119);
+}
+
+
+.hellokitty-img img {
+  width: 120px;
+}
+
+.hellokitty-img {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+}
+
+.board-container {
+  position: relative;
+  display: inline-block;
 }
